@@ -1,0 +1,29 @@
+{
+  "name": "ucompiler-plugin-babel",
+  "version": "1.0.0",
+  "description": "Babel support for UCompiler",
+  "main": "lib/main.js",
+  "jsnext:main": "src/main.js",
+  "devDependencies": {
+    "babel-preset-steelbrain": "^1.0.0"
+  },
+  "scripts": {
+    "compile": "babel --presets steelbrain src/main.js > lib/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelbrain/ucompiler-plugin-babel.git"
+  },
+  "keywords": [
+    "ucompiler"
+  ],
+  "author": "steelbrain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steelbrain/ucompiler-plugin-babel/issues"
+  },
+  "homepage": "https://github.com/steelbrain/ucompiler-plugin-babel#readme",
+  "dependencies": {
+    "babel-core": "^6.2.1"
+  }
+}
