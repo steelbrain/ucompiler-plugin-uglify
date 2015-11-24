@@ -4,7 +4,7 @@
   },
   "rules": [{
     "path": "src/*.js",
-    "output": "lib/{name}.js",
+    "outputPath": "lib/{name}.js",
     "plugins": ["babel"]
   }]
 }
