@@ -8,7 +8,7 @@
     "babel-preset-steelbrain": "^1.0.0"
   },
   "scripts": {
-    "compile": "babel --presets steelbrain src/main.js > lib/main.js"
+    "compile": "ucompiler go src"
   },
   "repository": {
     "type": "git",
