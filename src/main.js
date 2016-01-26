@@ -1,22 +1,11 @@
 'use babel'
 
-import {transform} from 'babel-core'
-
 export const compiler = false
 export const minifier = false
-export function process(contents, {fileName, relativePath, root}, {config, state}) {
-  const beginning = contents.substr(0, 11)
-  if (beginning !== '"use babel"' && beginning !== "'use babel'") {
-    return contents
+export function process(contents) {
+  const chunks = contents.split(/\r?\n/)
+  if (chunks[chunks.length - 1] !== '') {
+    chunks.push('')
   }
-
-  const transpiled = transform(contents, Object.assign({}, config.babel, {
-    filename: fileName,
-    filenameRelative: relativePath,
-    sourceRoot: root,
-    sourceMaps: true,
-    highlightCode: false
-  }))
-  state.sourceMap = transpiled.map.toString()
-  return transpiled.code
+  return chunks.join('\n')
 }

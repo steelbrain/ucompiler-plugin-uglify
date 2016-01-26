@@ -1,16 +1,17 @@
-UCompiler-Plugin-Babel
+UCompiler-Plugin-NewLine
 ======================
 
-This is a Babel support package for UCompiler. To compile your files using babel, simply start them with `'use babel'`.
+This plugin for ucompiler makes sure that your generated files always end with a new line.
+It also normalizes their EOLs to LF.
 
 
 #### How to Use
 
-Simply add "babel" to `plugins` field in your `.ucompilerrc`
+Simply add "newline" to `plugins` field in your `.ucompilerrc`
 
 ```js
 {
-  plugins: ["babel"]
+  plugins: ["newline"]
 }
 ```
 
