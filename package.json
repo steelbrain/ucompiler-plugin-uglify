@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/steelbrain/ucompiler-plugin-uglify/issues"
   },
-  "homepage": "https://github.com/steelbrain/ucompiler-plugin-uglify#readme"
+  "homepage": "https://github.com/steelbrain/ucompiler-plugin-uglify#readme",
+  "dependencies": {
+    "uglify-js": "^2.6.1"
+  }
 }
