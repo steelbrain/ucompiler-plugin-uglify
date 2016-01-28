@@ -1,6 +1,6 @@
 {
   "name": "ucompiler-plugin-uglify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Uglify support for UCompiler",
   "main": "lib/main.js",
   "jsnext:main": "src/main.js",
